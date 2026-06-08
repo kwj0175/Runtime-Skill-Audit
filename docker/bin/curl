@@ -1,0 +1,98 @@
+#!/usr/bin/env python3
+import base64
+import json
+import os
+import sys
+import time
+import urllib.parse
+import urllib.request
+
+
+def main() -> int:
+    args = sys.argv[1:]
+    silent = False
+    output_path = None
+    write_fmt = ""
+    auth = ""
+    method = "GET"
+    data_items = []
+    url = ""
+
+    i = 0
+    while i < len(args):
+        arg = args[i]
+        if arg == "-s" or arg == "-sf":
+            silent = True
+        elif arg == "-o":
+            i += 1
+            output_path = args[i]
+        elif arg == "-w":
+            i += 1
+            write_fmt = args[i]
+        elif arg == "-u":
+            i += 1
+            auth = args[i]
+        elif arg == "-G":
+            method = "GET"
+        elif arg == "-X":
+            i += 1
+            method = args[i].upper()
+        elif arg == "-d":
+            i += 1
+            data_items.append(args[i])
+        elif not arg.startswith("-"):
+            url = arg
+        i += 1
+
+    if not url:
+        print("curl wrapper: missing url", file=sys.stderr)
+        return 2
+
+    parsed = urllib.parse.urlparse(url)
+    query = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+    for item in data_items:
+        if "=" in item:
+            k, v = item.split("=", 1)
+            query.append((k, v))
+    body = None
+    final_url = url
+    if method == "GET" and query:
+        final_url = urllib.parse.urlunparse(parsed._replace(query=urllib.parse.urlencode(query)))
+    elif query:
+        body = urllib.parse.urlencode(query).encode()
+
+    req = urllib.request.Request(final_url, data=body, method=method)
+    if auth:
+        token = base64.b64encode(auth.encode()).decode()
+        req.add_header("Authorization", f"Basic {token}")
+
+    start = time.time()
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            content = resp.read()
+            status = getattr(resp, "status", 200)
+    except Exception as exc:
+        if not silent:
+            print(str(exc), file=sys.stderr)
+        return 22
+    elapsed = time.time() - start
+
+    if output_path and output_path != "/dev/null":
+        with open(output_path, "wb") as handle:
+            handle.write(content)
+    elif not output_path:
+        sys.stdout.buffer.write(content)
+
+    if write_fmt:
+        rendered = (
+            write_fmt.replace("%{http_code}", str(status))
+            .replace("%{time_total}", f"{elapsed:.6f}")
+            .replace("%{time_connect}", f"{elapsed:.6f}")
+            .replace("%{time_namelookup}", "0.000000")
+        )
+        sys.stdout.write(rendered)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

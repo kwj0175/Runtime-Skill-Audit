@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+import socket
+import sys
+import time
+
+
+def main() -> int:
+    args = sys.argv[1:]
+    count = 4
+    host = ""
+    i = 0
+    while i < len(args):
+        if args[i] == "-c" and i + 1 < len(args):
+            count = int(args[i + 1])
+            i += 2
+            continue
+        host = args[i]
+        i += 1
+    if not host:
+        print("ping wrapper: missing host", file=sys.stderr)
+        return 2
+    try:
+        ip = socket.gethostbyname(host)
+    except Exception as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
+    print(f"PING {host} ({ip}) 56(84) bytes of data.")
+    transmitted = received = 0
+    total = 0.0
+    for seq in range(count):
+        transmitted += 1
+        start = time.time()
+        try:
+            sock = socket.create_connection((host, 80), timeout=3)
+            sock.close()
+            elapsed = (time.time() - start) * 1000
+            total += elapsed
+            received += 1
+            print(f"64 bytes from {ip}: icmp_seq={seq+1} ttl=64 time={elapsed:.3f} ms")
+        except Exception:
+            print(f"From {ip} icmp_seq={seq+1} Destination Port Unreachable")
+        time.sleep(0.2)
+    loss = int((1 - (received / max(transmitted, 1))) * 100)
+    print(f"\n--- {host} ping statistics ---")
+    print(f"{transmitted} packets transmitted, {received} received, {loss}% packet loss")
+    if received:
+        avg = total / received
+        print(f"rtt min/avg/max/mdev = {avg:.3f}/{avg:.3f}/{avg:.3f}/0.000 ms")
+    return 0 if received else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

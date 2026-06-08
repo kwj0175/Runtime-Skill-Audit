@@ -1,0 +1,17 @@
+{
+  "owner": "hanxueyuan",
+  "slug": "accor",
+  "displayName": "Accor",
+  "latest": {
+    "version": "1.0.6",
+    "publishedAt": 1776237861316,
+    "commit": "https://github.com/openclaw/skills/commit/b2232439548aa8798462888c0fffc60ceafcb65d"
+  },
+  "history": [
+    {
+      "version": "1.0.1",
+      "publishedAt": 1776087220359,
+      "commit": "https://github.com/openclaw/skills/commit/1d4eebd27336da0cd260d9551615c8257934086b"
+    }
+  ]
+}

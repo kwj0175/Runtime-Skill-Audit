@@ -1,0 +1,17 @@
+{
+  "owner": "2233admin",
+  "slug": "qqbot-prompt-optimizer",
+  "displayName": "QQBot Prompt Optimizer",
+  "latest": {
+    "version": "1.1.0",
+    "publishedAt": 1775076421794,
+    "commit": "https://github.com/openclaw/skills/commit/aee6d279651976ccf56468dc13d4c38b9acffeba"
+  },
+  "history": [
+    {
+      "version": "1.0.0",
+      "publishedAt": 1772597789789,
+      "commit": "https://github.com/openclaw/skills/commit/ae08c2593cd022c1a94228c98b279c331300a4d1"
+    }
+  ]
+}

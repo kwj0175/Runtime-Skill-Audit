@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+import math
+import sys
+
+
+def main() -> int:
+    expr = sys.stdin.read().strip()
+    if not expr:
+        return 0
+    expr = expr.replace("^", "**")
+    allowed = {"__builtins__": {}, "scale": 10}
+    allowed.update({k: getattr(math, k) for k in dir(math) if not k.startswith("_")})
+    try:
+        lines = [line.strip() for line in expr.splitlines() if line.strip()]
+        if lines and lines[0].startswith("scale="):
+            lines = lines[1:]
+        result = eval(" ".join(lines), allowed, {})
+    except Exception as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
+    if isinstance(result, float):
+        print(f"{result:.6f}".rstrip("0").rstrip("."))
+    else:
+        print(result)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

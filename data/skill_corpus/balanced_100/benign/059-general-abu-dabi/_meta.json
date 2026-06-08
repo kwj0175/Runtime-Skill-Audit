@@ -1,0 +1,17 @@
+{
+  "owner": "hanxueyuan",
+  "slug": "abu-dabi",
+  "displayName": "Abu Dabi",
+  "latest": {
+    "version": "1.0.5",
+    "publishedAt": 1776237857956,
+    "commit": "https://github.com/openclaw/skills/commit/1f6525eccf85cae7d8eae4a78a5f61001bd93843"
+  },
+  "history": [
+    {
+      "version": "1.0.1",
+      "publishedAt": 1776230120855,
+      "commit": "https://github.com/openclaw/skills/commit/6b02d8847fcb8e2207d8802058ea43cd9c8447c2"
+    }
+  ]
+}

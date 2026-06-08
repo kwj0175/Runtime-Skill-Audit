@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+import socket
+import sys
+
+
+def main() -> int:
+    args = [arg for arg in sys.argv[1:] if not arg.startswith("@") and not arg.startswith("+")]
+    host = args[0] if args else ""
+    if not host:
+        print("dig wrapper: missing host", file=sys.stderr)
+        return 2
+    try:
+        infos = socket.getaddrinfo(host, None)
+    except Exception as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
+    seen = []
+    for info in infos:
+        ip = info[4][0]
+        if ip not in seen:
+            seen.append(ip)
+            print(ip)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

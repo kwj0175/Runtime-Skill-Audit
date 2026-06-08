@@ -1,0 +1,17 @@
+{
+  "owner": "hanxueyuan",
+  "slug": "7-up",
+  "displayName": "7 Up",
+  "latest": {
+    "version": "1.0.5",
+    "publishedAt": 1776237847582,
+    "commit": "https://github.com/openclaw/skills/commit/e1bf05c686bfea41be99f021de4749e33cfb42b2"
+  },
+  "history": [
+    {
+      "version": "1.0.1",
+      "publishedAt": 1776230108851,
+      "commit": "https://github.com/openclaw/skills/commit/b3ec86ef702c6f5fa000fff29b15e737150275ad"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "owner": "hanxueyuan",
+  "slug": "activision",
+  "displayName": "Activision",
+  "latest": {
+    "version": "1.0.5",
+    "publishedAt": 1776237867167,
+    "commit": "https://github.com/openclaw/skills/commit/5a8187d85b243542dd7a58cb9f3116074c374c3a"
+  },
+  "history": [
+    {
+      "version": "1.0.0",
+      "publishedAt": 1776055930774,
+      "commit": "https://github.com/openclaw/skills/commit/d9d3be6df530efa668fe944b44e86aad76159476"
+    }
+  ]
+}

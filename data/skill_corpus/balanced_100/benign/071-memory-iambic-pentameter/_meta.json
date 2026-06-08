@@ -1,0 +1,11 @@
+{
+  "owner": "adamkessler",
+  "slug": "iambic-pentameter",
+  "displayName": "Iambic Pentameter",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1775584805268,
+    "commit": "https://github.com/openclaw/skills/commit/aa43fb6c392513e1db43ed72db517236f6a95db4"
+  },
+  "history": []
+}

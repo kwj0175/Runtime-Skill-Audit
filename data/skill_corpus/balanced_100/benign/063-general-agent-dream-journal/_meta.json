@@ -1,0 +1,11 @@
+{
+  "owner": "albionaiinc-del",
+  "slug": "agent-dream-journal",
+  "displayName": "Agent Dream Journal",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1776692518879,
+    "commit": "https://github.com/openclaw/skills/commit/8551889f98335a0cccbdb41c4d5ca3f93dc6c547"
+  },
+  "history": []
+}

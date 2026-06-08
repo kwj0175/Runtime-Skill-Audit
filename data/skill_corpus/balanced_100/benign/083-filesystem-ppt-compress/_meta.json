@@ -1,0 +1,11 @@
+{
+  "owner": "accidwar",
+  "slug": "ppt-compress",
+  "displayName": "PPT Compressor",
+  "latest": {
+    "version": "1.0.3",
+    "publishedAt": 1772423285227,
+    "commit": "https://github.com/openclaw/skills/commit/6bb347a07c1d8e347f0055e92bff0247fd49e18c"
+  },
+  "history": []
+}

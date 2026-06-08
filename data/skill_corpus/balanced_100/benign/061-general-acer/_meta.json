@@ -1,0 +1,17 @@
+{
+  "owner": "hanxueyuan",
+  "slug": "acer",
+  "displayName": "Acer",
+  "latest": {
+    "version": "1.0.6",
+    "publishedAt": 1776237864334,
+    "commit": "https://github.com/openclaw/skills/commit/00445d2c6d1d58e80fd82cfeba385ebaec6e77ea"
+  },
+  "history": [
+    {
+      "version": "1.0.1",
+      "publishedAt": 1775923440409,
+      "commit": "https://github.com/openclaw/skills/commit/0d8ef98cfba8e5bc6d9012cb1fb987831c284b5b"
+    }
+  ]
+}

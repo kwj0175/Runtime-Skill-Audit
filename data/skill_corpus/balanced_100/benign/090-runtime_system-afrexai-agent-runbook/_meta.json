@@ -1,0 +1,11 @@
+{
+  "owner": "1kalin",
+  "slug": "afrexai-agent-runbook",
+  "displayName": "Agent Ops Runbook",
+  "latest": {
+    "version": "1.1.0",
+    "publishedAt": 1771782213152,
+    "commit": "https://github.com/openclaw/skills/commit/242135c9dac6bda97630538d479b328d8dc43710"
+  },
+  "history": []
+}

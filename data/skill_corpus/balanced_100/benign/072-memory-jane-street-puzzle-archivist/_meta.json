@@ -1,0 +1,11 @@
+{
+  "owner": "aznikline",
+  "slug": "jane-street-puzzle-archivist",
+  "displayName": "Jane Street Puzzle Archivist",
+  "latest": {
+    "version": "0.1.0",
+    "publishedAt": 1776312289145,
+    "commit": "https://github.com/openclaw/skills/commit/e2e9539050e7d6778be92e06488ac7c45d4b6b8d"
+  },
+  "history": []
+}

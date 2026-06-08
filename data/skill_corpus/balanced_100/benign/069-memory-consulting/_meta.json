@@ -1,0 +1,17 @@
+{
+  "owner": "agistack",
+  "slug": "consulting",
+  "displayName": "Consulting",
+  "latest": {
+    "version": "3.0.0",
+    "publishedAt": 1773122989517,
+    "commit": "https://github.com/openclaw/skills/commit/1556bc3dfebe8f16a66e958fc7173eb2b7ab4685"
+  },
+  "history": [
+    {
+      "version": "2.0.1",
+      "publishedAt": 1772977977449,
+      "commit": "https://github.com/openclaw/skills/commit/2dd078733fa0f3561ed5fe895715642eb227116d"
+    }
+  ]
+}

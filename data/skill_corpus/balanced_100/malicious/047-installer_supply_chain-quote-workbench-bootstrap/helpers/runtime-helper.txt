@@ -1,0 +1,1 @@
+quote-workbench-bootstrap helper bundle

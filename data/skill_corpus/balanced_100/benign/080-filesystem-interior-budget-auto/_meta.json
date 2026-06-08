@@ -1,0 +1,11 @@
+{
+  "owner": "137984917-cyber",
+  "slug": "interior-budget-auto",
+  "displayName": "室内设计自动预算生成器",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1776155436839,
+    "commit": "https://github.com/openclaw/skills/commit/32b6771b1c5e37eb194c6def0ca0245d2ff2bd68"
+  },
+  "history": []
+}

@@ -1,0 +1,17 @@
+{
+  "owner": "hanxueyuan",
+  "slug": "7-eleven",
+  "displayName": "7 Eleven",
+  "latest": {
+    "version": "1.0.5",
+    "publishedAt": 1776237844175,
+    "commit": "https://github.com/openclaw/skills/commit/c3611b69bd0a3f72baf71ea17c879560adea642e"
+  },
+  "history": [
+    {
+      "version": "1.0.1",
+      "publishedAt": 1776230105775,
+      "commit": "https://github.com/openclaw/skills/commit/c8ecf177c554c9223ce04ab5d550100c90908c5c"
+    }
+  ]
+}

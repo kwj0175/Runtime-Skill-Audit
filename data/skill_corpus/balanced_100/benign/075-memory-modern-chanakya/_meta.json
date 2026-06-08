@@ -1,0 +1,17 @@
+{
+  "owner": "21f2000735",
+  "slug": "modern-chanakya",
+  "displayName": "Modern Chanakya",
+  "latest": {
+    "version": "1.0.3",
+    "publishedAt": 1773954158687,
+    "commit": "https://github.com/openclaw/skills/commit/1e94913392782aa99f9f3425a5ad89ef7afc8784"
+  },
+  "history": [
+    {
+      "version": "1.0.1",
+      "publishedAt": 1773639035259,
+      "commit": "https://github.com/openclaw/skills/commit/8f0bc181e052f33e92357cbc9a0d79faf3cd0736"
+    }
+  ]
+}

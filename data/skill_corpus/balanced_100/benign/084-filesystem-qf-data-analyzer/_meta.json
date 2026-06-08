@@ -1,0 +1,11 @@
+{
+  "owner": "371166758-qq",
+  "slug": "qf-data-analyzer",
+  "displayName": "Data Analyzer",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1774602047782,
+    "commit": "https://github.com/openclaw/skills/commit/b17b4612a28af83cba830505271b53929ef7738d"
+  },
+  "history": []
+}

@@ -1,0 +1,17 @@
+{
+  "owner": "hanxueyuan",
+  "slug": "abbvie",
+  "displayName": "Abbvie",
+  "latest": {
+    "version": "1.0.5",
+    "publishedAt": 1776237854130,
+    "commit": "https://github.com/openclaw/skills/commit/c4548f3370643cf2511583e59008945951c0ddf3"
+  },
+  "history": [
+    {
+      "version": "1.0.1",
+      "publishedAt": 1776230117662,
+      "commit": "https://github.com/openclaw/skills/commit/73962eb307e2d29a5fc0f2e1d4042b1f7f2e420a"
+    }
+  ]
+}

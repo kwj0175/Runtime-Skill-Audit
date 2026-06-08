@@ -1,0 +1,17 @@
+{
+  "owner": "hanxueyuan",
+  "slug": "99",
+  "displayName": "99",
+  "latest": {
+    "version": "1.0.5",
+    "publishedAt": 1776237850567,
+    "commit": "https://github.com/openclaw/skills/commit/b1e353423578581a1d1f4e6756e53d1319814349"
+  },
+  "history": [
+    {
+      "version": "1.0.0",
+      "publishedAt": 1775781277954,
+      "commit": "https://github.com/openclaw/skills/commit/7b1e0913ce802fae7f60cb2581dc7e38fe14d858"
+    }
+  ]
+}

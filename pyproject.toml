@@ -1,0 +1,17 @@
+[project]
+name = "runtime-skill-audit"
+version = "0.1.0"
+description = "Runtime Skill Audit implementation for dynamic analysis of agent skills"
+requires-python = ">=3.10"
+dependencies = [
+  "langgraph",
+  "pydantic>=2",
+  "pyyaml",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["runtime_skill_audit*"]

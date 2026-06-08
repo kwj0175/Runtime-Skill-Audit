@@ -1,0 +1,11 @@
+{
+  "owner": "afrexai-cto",
+  "slug": "afrexai-rfp-response-generator",
+  "displayName": "Rfp Response Generator",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1773774081688,
+    "commit": "https://github.com/openclaw/skills/commit/1287d49b340548dbd36811286c5ecc6ac3b51396"
+  },
+  "history": []
+}

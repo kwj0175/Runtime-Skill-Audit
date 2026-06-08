@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Runtime outputs
+outputs/
+runs/
+inspection_runs/
+*.log
+
+# Local configs and credentials
+.env
+.env.*
+*.pem
+*.key
+auth.json
+openclaw.json
+.openclaw/
+
+# Archives and generated artifacts
+*.tar.gz
+*.tgz
+*.zip
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

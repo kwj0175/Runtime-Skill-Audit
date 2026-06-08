@@ -1,16 +1,4 @@
 {
-  "metadata": {
-    "version": "v2",
-    "organization": {
-      "entries": "Mid-level experience knowledge condensed from historical benchmark runs and recurring OpenClaw attack behavior.",
-      "defense_assets": "High-level generic security priors imported from external defense assets."
-    },
-    "paper_taxonomy": [
-      "high_level_security_priors",
-      "historical_experience_knowledge",
-      "skill_matched_retrieval"
-    ]
-  },
   "entries": [
     {
       "knowledge_id": "persistent-context-poisoning",

@@ -1,6 +1,11 @@
-FROM openclaw-sandbox:tool-analysis
+FROM python:3.11-slim
 
-ADD https://github.com/jqlang/jq/releases/download/jq-1.7.1/jq-linux-amd64 /usr/local/bin/jq
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        bash \
+        ca-certificates \
+        jq \
+    && rm -rf /var/lib/apt/lists/*
 
 COPY docker/bin/curl /usr/local/bin/curl
 COPY docker/bin/wget /usr/local/bin/wget
@@ -10,8 +15,7 @@ COPY docker/bin/dig /usr/local/bin/dig
 COPY docker/bin/nc /usr/local/bin/nc
 COPY docker/bin/git /usr/local/bin/git
 
-RUN chmod +x /usr/local/bin/jq \
-    /usr/local/bin/curl \
+RUN chmod +x /usr/local/bin/curl \
     /usr/local/bin/wget \
     /usr/local/bin/ping \
     /usr/local/bin/bc \

@@ -1,6 +1,6 @@
 llm:
-  model: gpt-oss:120b
-  base_url: https://ollama.com/api/chat
+  model: qwen2.5:7b
+  base_url: http://localhost:11434/api/chat
   api_key_env: OLLAMA_API_KEY
   temperature: 0.1
   timeout: 120
